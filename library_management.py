@@ -120,6 +120,9 @@ class Library:
         Args:
             isbn (str): The ISBN of the book to return.
         """
+        for book in book_collection:
+            if book.isbn == isbn:
+                book.copies += 1
         pass
 
     def search_by_author(self, author):
@@ -129,6 +132,9 @@ class Library:
         Args:
             author (str): The author's name.
         """
+        for book in book_collection:
+            if book.author == author:
+                print("Name:", book.name, "Author:", book.author)
         pass
 
     def search_by_year(self, year):

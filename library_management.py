@@ -102,7 +102,10 @@ class Library:
         Args:
             author (str): The author's name.
         """
-        pass
+        print("All Books By", author)
+        for book in self.book_collection:
+            if book.author == author:
+                print(book.title)
 
     def check_out_book(self, isbn):
         """

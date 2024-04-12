@@ -17,7 +17,7 @@ To get started with this project, follow these steps:
 
 2. **Clone Your Fork**: Clone your forked repository to your local machine using the following command:
 
-    ```git clone https://github.com/your-username/library-management-colab.git```
+    ```git clone https://github.com/omkar04gaikwad/Library-Management-System-section4.git```
 
 4. **Create a New Branch**: Create a new branch for your changes. Replace `your-branch-name` with a descriptive name for your branch `your-name/function-you-are-working-on` example: `john/init-book-class`.
    

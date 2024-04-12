@@ -114,7 +114,15 @@ class Library:
         Args:
             isbn (str): The ISBN of the book to check out.
         """
-        pass
+        for book in self.book_collection:
+            if isbn == book.isbn:
+                if book.copies > 0:
+                    book.copies -= 1
+                else:
+                    print("There are no more copies of", book.title)
+                return
+            
+        print("No book found with isbn:", isbn)
 
     def return_book(self, isbn):
         """

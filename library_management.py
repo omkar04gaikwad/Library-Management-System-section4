@@ -23,7 +23,15 @@ class Book:
             year (int): The year of publication of the book.
             copies (int): The number of copies available in the library.
         """
-        pass
+        self.title = title
+        self.author = author
+        self.isbn = isbn
+        self.year = year
+        self.copies = copies
+        
+        self.book_info = {"title": self.title, "author": self.author, "isbn": self.isbn, "year": self.year, "copies": self.copies}
+        
+  
 
 class Library:
     """
@@ -37,7 +45,7 @@ class Library:
         """
         Initializes a Library object with an empty collection of books.
         """
-        pass
+        self.book_collection = []
 
     def add_book(self, title, author, isbn, year, copies):
         """

@@ -146,19 +146,19 @@ class Library:
         pass
 
     def search_by_year(self, year):
-        """
-        Searches for books by publication year and displays matching books.
-
-        Args:
-            year (int): The publication year.
-        """
-        pass
+        print(f"Books from {year}")
+        for book in self.book_collection:
+            if book.year == year:
+                print(f"{book.title}, By: {book.author}")
 
     def list_all_authors(self):
-        """
-        Lists all unique authors in the library's collection.
-        """
-        pass
+        unique_authors = []
+
+        print("Here is a list of the unique authors in our collection:")
+        for book in self.book_collection:
+            if not book.author in unique_authors:
+                unique_authors.append(book.author)
+                print(book.author)
 
     def save_collection_to_file(self, filename):
         """

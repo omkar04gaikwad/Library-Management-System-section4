@@ -58,13 +58,16 @@ class Library:
             year (int): The year of publication of the book.
             copies (int): The number of copies available in the library.
         """
-        pass
+        newBook = Book(title, author, isbn, year, copies)
+        
+        self.book_collection = self.book_collection.append(newBook)
 
     def display_all_books(self):
         """
         Displays all books in the library's collection.
         """
-        pass
+        for i in self.book_colllection: 
+            print(i)
 
     def search_by_title(self, title):
         """
